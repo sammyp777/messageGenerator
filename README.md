@@ -1,22 +1,24 @@
 []: # FILEPATH: /Users/samuelpietrowski/Library/Mobile Documents/com~apple~CloudDocs/coding_projects/js_Git_project/README.md
 
-###Projekttitel:###
+### Projekttitel: 
 # Message Generator 
 
-###Beschreibung: 
+### Beschreibung: 
 Jedes mal wenn ein **Benutzer** mit dem Programm interagiert, wird eine neue Nachricht ausgegeben.
 
-###Funktionen: 
+### unktionen: 
 Die Funktion generiert auf **Zufallsbasis** eine neue _Nachricht_.
 
-###Verwendung: 
-Die Nachrichtenausgabe könnten verschiedene Antworten für eine Frage sein, welche mehrere Antworten hat. 
+### erwendung: 
+Die Nachrichtenausgabe könnten 
+> verschiedene Antworten für eine Frage sein, 
+> welche mehrere Antworten hat. 
 
-###Technologie:
-`#0969DA` Javascript
+### Technologie:
+~~`#0969DA`~~ Javascript
 
-###Mitarbeiter: 
+### Mitarbeiter: 
 DavSam
 
-###Lizenz: 
-
+### Lizenz: 
+none
