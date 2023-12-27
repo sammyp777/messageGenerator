@@ -1,18 +1,37 @@
 
-const message = [
-    'Wenn es heute regnet ist es morgen nass.',
-    'Die Sonne scheint, wenn es nicht regnet.',
-    'Kehre in dich und du wirst die Antwort finden.',
-    'Wenn du nicht weißt, was du tun sollst, dann tu nichts.',
-    'Wie wäre es sich einfach mal zu entspannen?',
-    'Ein wenig Bildung schadet nie.',
-    'Zu Coden macht Spass, aber nur wenn es funktioniert.',
-]
 
+const messageComponents = {
+    weather: ['regnet', 'sonnig', 'windig', 'bewölkt'],
+    action: ['spazieren gehen', 'lesen', 'musizieren', 'kochen'],
+    advice: ['Sei geduldig', 'Bleib positiv', 'Glaube an dich selbst', 'Lerne aus Fehlern'],
+}
+
+const getRandomComponent = (components) => {
+    const index = Math.floor(Math.random() * components.length);
+    return components[index];
+}
 
 const messageGenerator = () => {
-    const index = Math.floor(Math.random() * message.length);
-    return message[index];
+    let generatedMessage = '';
+
+    for (let component in messageComponents) {
+        switch (component) {
+            case 'weather':
+                generatedMessage += `Wenn es heute ${getRandomComponent(messageComponents[component])} ist, `;
+                break;
+            case 'action':
+                generatedMessage += `dann kannst du ${getRandomComponent(messageComponents[component])}. `;
+                break;
+            case 'advice':
+                generatedMessage += `${getRandomComponent(messageComponents[component])}. `;
+                break;
+            default:
+                break;
+        }
+    }
+
+
+    return generatedMessage;
 }
 
 console.log(messageGenerator());
