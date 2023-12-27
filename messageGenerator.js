@@ -16,3 +16,4 @@ const messageGenerator = () => {
 }
 
 console.log(messageGenerator());
+
